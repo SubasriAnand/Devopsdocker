@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: SubasriAnand/paytmmovies:latest
+    image: subasrianand/paymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: SubasriAnand/paytmtrain:latest
+    image: subasrianand/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: SubasriAnand/paytmdth:latest
+    image: subasrianand/paydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: SubasriAnand/paytmrecharge:latest
+    image: subasrianand/payrecharge:latest
     ports:
       - "84:80"
     deploy:
